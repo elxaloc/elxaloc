@@ -249,19 +249,19 @@ export async function handler(chatUpdate) {
                 if (!('isBanned' in chat))
                     chat.isBanned = false
                 if (!('welcome' in chat))
-                    chat.welcome = true
+                    chat.welcome = false
                 if (!('detect' in chat))
-                    chat.detect = true
+                    chat.detect = false
                 if (!('sWelcome' in chat))
-                    chat.sWelcome = ''
+                    chat.sWelcome = false
                 if (!('sBye' in chat))
-                    chat.sBye = ''
+                    chat.sBye = false
                 if (!('sPromote' in chat))
                     chat.sPromote = ''
                 if (!('sDemote' in chat))
                     chat.sDemote = ''
                 if (!('delete' in chat))
-                    chat.delete = true
+                    chat.delete = false
                 if (!('modohorny' in chat))
                     chat.modohorny = false    
                 if (!('autosticker' in chat))
@@ -281,16 +281,16 @@ export async function handler(chatUpdate) {
             } else
                 global.db.data.chats[m.chat] = {
                     isBanned: false,
-                    welcome: true,
-                    detect: true,
+                    welcome: false,
+                    detect: false,
                     sWelcome: '',
                     sBye: '',
                     sPromote: '',
                     sDemote: '',
-                    delete: true,
-                    modohorny: true,
+                    delete: false,
+                    modohorny: false,
                     autosticker: false,
-                    audios: true,
+                    audios: false,
                     antiLink: false,
                     antiLink2: false,
                     viewonce: false,
