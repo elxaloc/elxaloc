@@ -13,7 +13,7 @@ conn.sendMessage(m.chat, { text: teks, mentions: participants.map(a => a.id) }, 
 }
 handler.help = ['tagall <mesaje>','invocar <mesaje>']
 handler.tags = ['group']
-handler.command = /^(infieles|esclavos|gatines|equipos|jugadores|jugadoras)$/i
+handler.command = /^(infieles|esclavos|esclavas|gatines|muchanchos|muchanchas|equipos|jugadores|jugadoras)$/i
 handler.admin = true
 handler.group = true
 export default handler
